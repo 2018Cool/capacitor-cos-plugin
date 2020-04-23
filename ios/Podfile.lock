@@ -1,0 +1,31 @@
+PODS:
+  - Capacitor (1.1.0):
+    - CapacitorCordova (= 1.1.0)
+  - CapacitorCordova (1.1.0)
+  - QCloudCore (5.6.3)
+  - QCloudCOSXML/Transfer (5.6.3):
+    - QCloudCore (= 5.6.3)
+
+DEPENDENCIES:
+  - "Capacitor (from `../node_modules/@capacitor/ios`)"
+  - QCloudCOSXML/Transfer
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CapacitorCordova
+    - QCloudCore
+    - QCloudCOSXML
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../node_modules/@capacitor/ios"
+
+SPEC CHECKSUMS:
+  Capacitor: 1e4b4f057fe6c727575a90cc640fbf6aa019a017
+  CapacitorCordova: 49e84a6ab0ff82f00667bd27bb3c0e98bafea445
+  QCloudCore: fd589c19c210a98cbe0f9e6ae23ea787d31073e5
+  QCloudCOSXML: 72d32ee68cb24b636864d55b3808cde689ac685e
+
+PODFILE CHECKSUM: c4fe9c826550cacc8dabd80e25a9df3f6af4ef62
+
+COCOAPODS: 1.7.5
