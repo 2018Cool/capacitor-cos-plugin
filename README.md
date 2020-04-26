@@ -5,6 +5,29 @@
 npm i capacitor-cos-plugin --save
 npx cap sync
 ```
+android工程中需在MainActivity中引入插件
+```
+
+import android.os.Bundle;
+import com.getcapacitor.BridgeActivity;
+import com.getcapacitor.Plugin;
+
+import java.util.ArrayList;
+import com.plugin.cos.CosPlugin;
+
+public class MainActivity extends BridgeActivity {
+  @Override
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    // Initializes the Bridge
+    this.init(savedInstanceState, new ArrayList<Class<? extends Plugin>>() {{
+      // Additional plugins you've installed go here
+      add(CosPlugin.class);
+
+    }});
+  }
+}
+```
 #### web接口
 ```
 需要服务端提供接口返回一个临时授权信息，具体如何使用参考腾讯cos文档
